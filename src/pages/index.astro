@@ -22,11 +22,6 @@ const buyingArguments = [
 function getName(index: number) {
 	return `White almond butter 500g Picture #${index}`;
 }
-
-const data = await fetch(`${Astro.url.origin}/placeholder.json`).then((response) => {
-	return response.json();
-})
-console.log(data);
 ---
 
 <Layout title="Welcome to Astro.">
