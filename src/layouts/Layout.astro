@@ -1,36 +1,18 @@
----
-export interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
----
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>❗ DEV KoRo: Top-Qualität in günstigen Großpackungen | KoRo Germany</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="KoRo: Top-Qualität in günstigen Großpackungen | KoRo Germany">
+		<meta name="author" content="KoRo Drogerie GmbH">
+		<meta name="robots" content="index,follow">
+		<meta name="revisit-after" content="15 days">
+		<meta name="og:type" content="website">
+		<link rel="shortcut icon" href="https://koro.imgix.net/media/66/f7/5b/1662581399/koro-logoPXS2yC9zKwHVo.svg?w=3000&auto=format,compress&fit=max&cs=srgb">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://koro.imgix.net/media/63/6f/cb/1647262979/apple-touch-icon-precomposed.png?w=3000&auto=format,compress&fit=max&cs=srgb">
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
