@@ -3,13 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import BaseSlider from '../components/BaseSlider.vue';
 
 const images = [
-    'https://koro.imgix.net/media/fe/ef/95/1665569185/MUS_005_NEU_01_AK (2).jpg',
-    'https://koro.imgix.net/media/f1/a2/c1/1665569186/MUS_005_NEU_05_AK (2).jpg',
-    'https://koro.imgix.net/media/10/69/aa/1665569191/MUS_005_NEU_03_AK (1).jpg',
-    'https://koro.imgix.net/media/e8/4a/c7/1665569244/MUS_005_NEU_08_AK.jpg',
-    'https://koro.imgix.net/media/2b/3b/04/1665569248/MUS_005_NEU_06_AK (1).jpg',
-    'https://koro.imgix.net/media/99/e5/e4/1665569248/MUS_005_NEU_07_AK (1).jpg',
-    'https://koro.imgix.net/media/09/41/79/1665569249/MUS_005_NEU_02_AK.jpg',
+    'https://koro.imgix.net/media/fe/ef/95/1665569185/MUS_005_NEU_01_AK (2).jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/f1/a2/c1/1665569186/MUS_005_NEU_05_AK (2).jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/10/69/aa/1665569191/MUS_005_NEU_03_AK (1).jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/e8/4a/c7/1665569244/MUS_005_NEU_08_AK.jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/2b/3b/04/1665569248/MUS_005_NEU_06_AK (1).jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/99/e5/e4/1665569248/MUS_005_NEU_07_AK (1).jpg?auto=format,compress&w=240&h=380',
+    'https://koro.imgix.net/media/09/41/79/1665569249/MUS_005_NEU_02_AK.jpg?auto=format,compress&w=240&h=380',
 ];
 const buyingArguments = [
     '100% blanched almonds',
@@ -59,9 +59,6 @@ console.log(data);
 							</li>
 							</>
 						))}
-                        <!-- <li v-for="(item, index) in buyingArguments" :key="index" class="mb-2 text-zinc-500">
-                            {{ item }}
-                        </li> -->
                     </ul>
 
                     <div class="flex flex-row">
