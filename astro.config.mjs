@@ -6,7 +6,9 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), vue()],
+  integrations: [tailwind(), vue({
+      appEntrypoint: "/src/entrypoints/_shopware",
+  }),],
   output: "server",
   adapter: vercel()
 });

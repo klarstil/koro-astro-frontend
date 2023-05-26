@@ -1,0 +1,10 @@
+---
+import Detail from '../../components/Detail.vue';
+import Layout from '../../layouts/Layout.astro';
+
+const { id } = Astro.params;
+---
+
+<Layout>
+    <Detail id={id}></Detail>
+</Layout>

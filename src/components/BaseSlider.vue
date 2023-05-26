@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
+
 import { ref } from 'vue';
 
 const props = defineProps(['url']);
@@ -33,4 +34,6 @@ const data = await fetch(`${props.url}/placeholder.json?limit=12`).then((respons
             <Pagination></Pagination>
         </template>
     </Carousel>
+
+    <BaseLoader v-else></BaseLoader>
 </template>
