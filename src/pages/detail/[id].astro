@@ -6,5 +6,5 @@ const { id } = Astro.params;
 ---
 
 <Layout>
-    <Detail id={id}></Detail>
+    <Detail id={id} url={Astro.url.origin}></Detail>
 </Layout>

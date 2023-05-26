@@ -6,7 +6,8 @@ import { useProductSearch, useProduct } from '@shopware-pwa/composables-next';
 const { search } = useProductSearch();
 
 const props = defineProps<{
-    id: string | undefined
+    id: string | undefined,
+    url: string
 }>();
 
 const productResponse = await search(props.id as string);
@@ -80,7 +81,7 @@ const buyingArguments = rawArguments.split('\n');
                 Client side only slider component
             </h1>
             <ClientOnly fallback-tag="div" fallback="Loading similar products...">
-                <BaseSlider></BaseSlider>
+                <BaseSlider :url="url" client:only="vue"></BaseSlider>
             </ClientOnly>
         </div>
     </div>
